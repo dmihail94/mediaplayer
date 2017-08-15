@@ -1,0 +1,11 @@
+.highlight {
+  background-color: $transcript;
+}
+
+.mejs__controls:not([style*='display: none']) {
+    background: palette(black, light);
+}
+
+.mejs__time-current {
+  background: $time-current;
+}

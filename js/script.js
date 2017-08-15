@@ -40,8 +40,8 @@ let script = $('.transcript span');
 
 let scriptLen = script.length;
 
-video.on('timeupdate',function() {
-  for(let i=0; i<scriptLen; i++) {
+video.on('timeupdate', function() {
+  for (let i = 0; i < scriptLen; i++) {
 
     let currentTime = video[0].getCurrentTime();
     let start = $(script[i]).attr('data-start');
@@ -53,7 +53,7 @@ video.on('timeupdate',function() {
     $(script[i]).click(function() {
       const transcriptTime = $(script[i]).attr('data-start');
 
-      if(transcriptTime) {
+      if (transcriptTime) {
         video[0].setCurrentTime(transcriptTime);
       }
     });
